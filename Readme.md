@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Юлия Синякова](https://up.htmlacademy.ru/htmlcss/21/user/800959).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский] (https://htmlacademy.ru/profile/grandmaus)
 
 ---
 
