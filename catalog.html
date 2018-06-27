@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+
+  </head>
+  <body class="catalog">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="logo-DEVICE"> <!--   -->
+          <a href="index.html">Device</a>
+        </div>
+
+        <form action="https://htmlacademy.ru/echo" method="post">
+                  <input type="search" name="search" placeholder="Поиск по сайту">
+                  <button type="submit">Найти</button>
+
+
+        </form>
+
+        <ul class="site-navigation">
+          <li>
+            <a href="#">Каталог товаров</a> <!--   -->
+            <ul>
+              <li><a href="#"> Виртуальная реальность </a></li>
+              <li><a href="catalog.html"> Моноподы для селфи </a></li>
+              <li><a href="#"> Экшн-камеры </a></li>
+              <li><a href="#"> Фитнес-браслеты </a></li>
+              <li><a href="#"> Умные часы </a></li>
+              <li><a href="#"> Квадрокоптеры </a></li>
+            </ul>
+          </li>
+          <li><a href="#"> Доставка </a></li>
+          <li><a href="#"> Гарантия </a></li>
+          <li><a href="#"> Контактия </a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#"> Валентин Петухов </a></li>
+          <li><a href="#"> Выйти </a></li>
+          <li><a href="#"> Сравнить </a></li>
+          <li><a href="#"> Корзина </a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb">
+        <ul>
+          <li><a href="index.html"> Главная </a></li>
+          <li><a href="#"> Каталог товаров </a></li>
+          <li><a> Моноподы для селфи </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="filter">
+        <h2>Фильтр:</h2>
+        <form action="https://htmlacademy.ru/echo" method="post">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <!-- ??? -->
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label> <input type="checkbox" name="color-black" /> Черный </label>
+            <label> <input type="checkbox" name="color-white" /> Белый </label>
+            <label> <input type="checkbox" name="color-blue" /> Синий </label>
+            <label> <input type="checkbox" name="color-red" /> Красный </label>
+            <label> <input type="checkbox" name="color-pink" /> Розовый </label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label><input type="radio" name="Bluetooth" value="yes" />Есть</label>
+            <label><input type="radio" name="Bluetooth" value="no" />Нет</label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </aside>
+
+      <section class="sorting">
+
+        <h2>Сотрировка:</h2>
+        <ul class="sorting-menu">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+
+        <div class="sorting-dir">
+          <a> <img src="http://placehold.it/10x11" alt="Сортировать по возрастанию"/></a>
+          <a> <img src="http://placehold.it/10x11" alt="Сортировать по убванию"/></a>
+        </div>
+
+      </section>
+
+      <section class="search-results">
+        <h2 class="visibility-hidden"> Результаты поиска </h2>
+          <!--Правильно я понимаю, что "В корзину" "Добавить к сравнению" - это  ссылки добавляемые в CSS псевдоэелементами? -->
+        <ul class="results-list">
+          <li>
+            <img src="http://placehold.it/360x380"  alt="Любительская селфи-палка"/>
+            <a href="#">Любительская селфи-палка</a>
+            <p class="cost">
+              500 руб
+            </p>
+          </li>
+
+          <li>
+            <img src="http://placehold.it/360x380"  alt="Профессиональная селфи-палка"/>
+            <a href="#"> Профессиональная селфи-палка</a>
+            <p class="cost">
+              1 500 руб
+            </p>
+          </li>
+
+          <li>
+            <img src="http://placehold.it/360x380"  alt="Непотопляемая селфи-палка"/>
+            <a href="#">Непотопляемая селфи-палка</a>
+            <p class="cost">
+              2 500 руб
+            </p>
+          </li>
+
+          <li>
+            <span>NEW</span>
+            <img src="http://placehold.it/360x380"  alt="Селфи-палка <q>Следуй за мной</q>"/>
+            <a href="#">Селфи-палка <q>Следуй за мной</q></a> <!-- Обратить внимание при проверке на валидность-->
+            <p class="cost">
+              4 500 руб
+            </p>
+          </li>
+        </ul>
+
+        <div class="paginator">
+           <a class="prev disabled" href="#prev">Назад</a>
+           <a class="current" href="#1">1</a>
+           <a href="#2">2</a>
+           <a href="#3">3</a>
+           <a class="next" href="#next">Вперёд</a>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="column-left">
+        <div class="logo-DEVICE"> <!--   -->
+          <a>Device</a>
+        </div>
+        <p class="contact">
+          г. Москва ул. Строителей,15
+        </p>
+      </div>
+      <div class="column-center">
+        <ul class="site-navigation">
+          <li><a href="#"> Доставка </a></li>
+          <li><a href="#"> Гарантия </a></li>
+          <li><a href="#"> Контакты </a></li>
+        </ul>
+
+        <ul class="social">
+          <li><a href="https://facebook.com"> Фейсбук </a></li>
+          <li><a href="https://instagram.com"> Инстаграм </a></li>
+          <li><a href="https://twitter.com"> Твиттер </a></li>
+        </ul>
+
+      </div>
+      <div class="column-right">
+        <ul class="user-navigation">
+          <li><a href="#"> Валентин Петухов </a></li>
+          <li><a href="#"> Выйти </a></li>
+          <li><a href="#"> Сравнить </a></li>
+          <li><a href="#"> Корзина </a></li>
+        </ul>
+        <p class="contact">
+          Тел.:+7(495) 495-95-95
+        </p>
+
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="http://placehold.it/27x35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1"/> </a>
+
+      </div>
+    </footer>
+  </body>
+
+
+</html>
