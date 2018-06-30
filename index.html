@@ -15,26 +15,50 @@
         <button type="submit">Найти</button>
       </form>
       <ul class="user-navigation">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li>
+          <a href="#">Войти</a>
+        </li>
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
       </ul>
       <nav class="main-navigation">
           <ul class="site-navigation">
           <li>
             <a href="#">Каталог товаров</a>
             <ul>
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -114,26 +138,44 @@
           </li>
         </ol>
       </section>
-      <section class="catalog" >
+      <section class="product-categories">
         <!-- Картнки в меню ведь не являются контентными изображениями?
         Их вставлю CSS.  -->
         <h2 class="visibility-hidden">Каталог</h2>
         <ul>
-          <li><h3><a href="#">Виртуальная реальность </a></h3></li>
-          <li><h3><a href="catalog.html">Моноподы для селфи </a></h3></li>
-          <li><h3><a href="#">Экшн-камеры </a></h3> </li>
-          <li><h3><a href="#">Фитнес-браслеты </a></h3></li>
-          <li><h3><a href="#">Умные часы </a></h3></li>
-          <li><h3><a href="#">Квадрокоптеры </a></h3></li>
+          <li>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+          <li>
+            <a href="#">Квадрокоптеры</a>
+          </li>
         </ul>
       </section>
       <section class="service">
         <h2 class="visibility-hidden">Сервис</h2>
         <!--Кнопки переключения пока просто разметила списком.   -->
         <ul class="navigation">
-          <li><span class="btn-black">Доставка</span></li>
-          <li><span class="btn-black">Гарантия</span></li>
-          <li><span class="btn-black">Кредит</span></li>
+          <li>
+            <span class="btn-black">Доставка</span>
+          </li>
+          <li>
+            <span class="btn-black">Гарантия</span>
+          </li>
+          <li>
+            <span class="btn-black">Кредит</span>
+          </li>
         </ul>
         <section class="content">
           <h3>Доставка</h3>
@@ -181,7 +223,7 @@
           </li>
         </ul>
       </section>
-      <section class="aboutus">
+      <section class="about-us">
         <h2>О нас</h2>
         <p> Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.</p>
@@ -189,9 +231,15 @@
             DEVICE работает со многими транспортными компаниями:
         </p>
         <ul>
-          <li><a href="https://www.dellin.ru/">Деловые Линии</a></li>
-          <li><a href="http://autotrading.ru/">Автотрейдинг</a></li>
-          <li><a href="http://www.jde.ru/">ЖелДорЭкспедиция</a></li>
+          <li>
+            <a href="https://www.dellin.ru/">Деловые Линии</a>
+          </li>
+          <li>
+            <a href="http://autotrading.ru/">Автотрейдинг</a>
+          </li>
+          <li>
+            <a href="http://www.jde.ru/">ЖелДорЭкспедиция</a>
+          </li>
         </ul>
         <a class="btn-orange" href="#">Подробнее о нас</a>
       </section>
@@ -205,6 +253,29 @@
           по адресу: г.Москва, ул. Строителей, д.15.">
         <a class="btn-orange" href="writeus.html">Напишите нам</a>
       </section>
+      <section class="map-popap">
+        <h2>Карта</h2>
+        <img  class="map" src="http://placehold.it/960x500"
+        alt="Адрес пункта самовывоза: г. Москва ул. Строителей,15">
+        <button class="close" type="button">Закрыть</button>
+      </section>
+      <section class="write-us-popap">
+        <form action="https://echo.htmlacademy.ru" method="post" >
+          <label> Ваше имя
+            <input type="text" name="name" placeholder="Имя Фамилия"/>
+          </label>
+          <label>
+            Ваш e-mail
+            <input type="email" name="email" placeholder="email@example.ru"/>
+          </label>
+          <label>
+            Текст письма
+            <textarea name="comment" rows="10">В свободной форме</textarea>
+          </label>
+          <button type="submit">Отправить</button>
+          <button type="button" name="close"><img src="#" alt="Закрыть окно"></button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="column-left">
@@ -215,23 +286,41 @@
       </div>
       <div class="column-center">
         <ul class="site-navigation">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
         <ul class="social">
-          <li><a href="https://facebook.com">Фейсбук</a></li>
-          <li><a href="https://instagram.com">Инстаграм</a></li>
-          <li><a href="https://twitter.com">Твиттер</a></li>
+          <li>
+            <a href="https://facebook.com">Фейсбук</a>
+          </li>
+          <li>
+            <a href="https://instagram.com">Инстаграм</a>
+          </li>
+          <li>
+            <a href="https://twitter.com">Твиттер</a>
+          </li>
         </ul>
       </div>
       <div class="column-right">
         <ul class="user-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
         </ul>
-        <p class="contact"> Тел.:+7(495) 495-95-95 </p>
+        <a class="contact" href="tel:+74954959595">+7 (495) 495-95-95</a>
         <a class="logo-htmlacademy"
           href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="http://placehold.it/27x35"
