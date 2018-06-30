@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
-  <body class="catalog">
+  <body>
     <header class="main-header">
-      <a href="index.html" class="logo-device">
-        <img src="https://placehold.it/164x36" alt="Device">
+      <a href="index.html" class="device">
+        <img src="https://placehold.it/164x36" width="164" height="36" alt="Device">
       </a>
-      <form class="form-search" action="https://htmlacademy.ru/echo"
-            method="post">
+      <form class="form-search" action="https://htmlacademy.ru/echo" method="post">
         <input type="search" name="search" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+        <button class="btn-search" type="submit">Найти</button>
       </form>
       <ul class="user-navigation">
         <li>
@@ -66,20 +65,18 @@
       </nav>
     </header>
     <main>
-      <h1>Моноподы для селфи</h1>
-      <div class="breadcrumb">
-        <ul>
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-          <li>
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li>
-            <a>Моноподы для селфи</a>
-          </li>
-        </ul>
-      </div>
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="breadcrumb">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="current">
+          Моноподы для селфи
+        </li>
+      </ul>
       <aside class="filter">
         <h2>Фильтр:</h2>
         <form action="https://htmlacademy.ru/echo" method="post">
@@ -89,18 +86,18 @@
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
-            <label> <input type="checkbox" name="color-black"/>Черный</label>
-            <label> <input type="checkbox" name="color-white"/>Белый</label>
-            <label> <input type="checkbox" name="color-blue"/>Синий</label>
-            <label> <input type="checkbox" name="color-red"/>Красный</label>
-            <label> <input type="checkbox" name="color-pink"/>Розовый</label>
+            <label> <input type="checkbox" name="color-black">Черный</label>
+            <label> <input type="checkbox" name="color-white">Белый</label>
+            <label> <input type="checkbox" name="color-blue">Синий</label>
+            <label> <input type="checkbox" name="color-red">Красный</label>
+            <label> <input type="checkbox" name="color-pink">Розовый</label>
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <label><input type="radio" name="Bluetooth" value="yes"/>Есть</label>
-            <label><input type="radio" name="Bluetooth" value="no"/>Нет</label>
+            <label><input type="radio" name="Bluetooth" value="yes">Есть</label>
+            <label><input type="radio" name="Bluetooth" value="no">Нет</label>
           </fieldset>
-          <button class="btn-orange" type="submit">Показать</button>
+          <button class="btn-default" type="submit">Показать</button>
         </form>
       </aside>
       <div class="sorting">
@@ -118,51 +115,50 @@
         </ul>
         <div class="sorting-directory">
           <a>
-            <img src="http://placehold.it/10x11" alt="Сортировать по возрастанию">
+            <img src="http://placehold.it/10x11" width="10" height="11" alt="Сортировать по возрастанию">
           </a>
           <a>
-            <img src="http://placehold.it/10x11" alt="Сортировать по убванию">
+            <img src="http://placehold.it/10x11" width="10" height="11" alt="Сортировать по убванию">
           </a>
         </div>
       </div>
       <section class="search-results">
         <h2 class="visibility-hidden">Результаты поиска</h2>
         <ul class="results-list">
-          <li>
-            <img src="http://placehold.it/360x380" alt="Любительская селфи-палка">
+          <li class="results-item">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Любительская селфи-палка">
             <a href="#">Любительская селфи-палка</a>
             <p class="cost">500 руб</p>
             <div class="container-link" >
-              <a class="btn-orange" href="#">В корзину</a>
+              <a class="btn-default" href="#">В корзину</a>
               <a class="btn-compare" href="#">Добавить к сравнению</a>
             </div>
           </li>
-          <li>
-            <img src="http://placehold.it/360x380" alt="Профессиональная селфи-палка">
+          <li class="results-item">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
             <a href="#"> Профессиональная селфи-палка</a>
             <p class="cost">1 500 руб</p>
             <div class="container-link" >
-              <a class="btn-orange" href="#">В корзину</a>
+              <a class="btn-default" href="#">В корзину</a>
               <a class="btn-compare" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li>
-            <img src="http://placehold.it/360x380" alt="Непотопляемая селфи-палка">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
             <a href="#">Непотопляемая селфи-палка</a>
             <p class="cost">2 500 руб</p>
             <div class="container-link" >
-              <a class="btn-orange" href="#">В корзину</a>
+              <a class="btn-default" href="#">В корзину</a>
               <a class="btn-compare" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <!-- NEW добавлю псевдоэлементом для обекта с классом "new" -->
-          <li class="new">
-            <img src="http://placehold.it/360x380"
-              alt="Селфи-палка &laquo;Следуй за мной&raquo;">
+          <li class="results-item new">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
             <a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a>
             <p class="cost">4 500 руб</p>
             <div class="container-link" >
-              <a class="btn-orange" href="#">В корзину</a>
+              <a class="btn-default" href="#">В корзину</a>
               <a class="btn-compare" href="#">Добавить к сравнению</a>
             </div>
           </li>
@@ -190,8 +186,8 @@
     </main>
     <footer class="page-footer">
       <div class="column-left">
-        <a href="index.html" class="logo-device">
-          <img src="http://placehold.it/164x36" alt="Device">
+        <a href="index.html" class="device">
+          <img src="http://placehold.it/164x36" width="164" height="36" alt="Device">
         </a>
         <p class="contact">г. Москва ул. Строителей,15</p>
       </div>
@@ -234,9 +230,8 @@
           </li>
         </ul>
         <a class="contact" href="tel:+74954959595">+7 (495) 495-95-95</a>
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-           <img src="http://placehold.it/27x35"
-                alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+           <img src="http://placehold.it/27x35" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
         </a>
       </div>
     </footer>
