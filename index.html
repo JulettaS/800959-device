@@ -9,11 +9,11 @@
       <a class="logo">
         <img src="img/logo.svg" width="164" height="36" alt="Device">
       </a>
-      <form class="form-search" action="https://htmlacademy.ru/echo" method="get">
+      <form class="form-search" action="https://htmlacademy.ru/echo" method="get" aria-label="Поиск по сайту">
         <input type="search" name="search" placeholder="Поиск по сайту">
         <button type="submit">Найти</button>
       </form>
-      <ul class="user-navigation">
+      <ul class="user-navigation" aria-label="Меню пользователя">
         <li>
           <a href="#">Войти</a>
         </li>
@@ -24,7 +24,7 @@
           <a href="#">Корзина</a>
         </li>
       </ul>
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Навигация по сайту">
         <ul class="site-navigation">
           <li>
             <a href="#">Каталог товаров</a>
@@ -138,7 +138,7 @@
       <section class="product-categories">
         <!-- Картнки в меню ведь не являются контентными изображениями?
         Их вставлю CSS.  -->
-        <h2 class="visibility-hidden">Каталог</h2>
+        <h2 class="visibility-hidden">Категории товаров</h2>
         <ul>
           <li>
             <a href="#">Виртуальная реальность</a>
@@ -258,7 +258,7 @@
         <p class="contact"> г. Москва ул. Строителей,15 </p>
       </div>
       <div class="column-center">
-        <ul class="site-navigation">
+        <ul class="site-navigation" aria-label="Навигация по сайту">
           <li>
             <a href="#">Доставка</a>
           </li>
@@ -269,7 +269,7 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="social">
+        <ul class="social" aria-label="Ссылки на социальные сети">
           <li>
             <a href="https://facebook.com">Фейсбук</a>
           </li>
@@ -282,7 +282,7 @@
         </ul>
       </div>
       <div class="column-right">
-        <ul class="user-navigation">
+        <ul class="user-navigation" aria-label="Меню пользователя">
           <li>
             <a href="#">Войти</a>
           </li>
@@ -293,7 +293,7 @@
             <a href="#">Корзина</a>
           </li>
         </ul>
-        <a class="contact" href="tel:+74954959595">+7 (495) 495-95-95</a>
+        <a class="contact" href="tel:+74954959595" property="telephone">+7 (495) 495-95-95</a>
         <a class="develeper-contact" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1">
         </a>
@@ -312,11 +312,11 @@
         </label>
         <label>
           Ваш e-mail
-          <input type="email" name="email" placeholder="email@example.ru">
+          <input type="email" name="email" placeholder="email@example.ru" required>
         </label>
         <label>
           Текст письма
-          <textarea name="comment" rows="10">В свободной форме</textarea>
+          <textarea name="comment" rows="10" required>В свободной форме</textarea>
         </label>
         <button class="btn-default" type="submit">Отправить</button>
         <button class="btn-close" type="button" name="close">Закрыть</button>
