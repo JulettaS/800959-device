@@ -140,9 +140,12 @@ a {
   border: 2px solid #000000;
 }
 
-.logo {
+
+.main-header{
   position: relative;
 }
+
+
  .main-header .logo:hover::after {
   content: "";
   position: absolute;
