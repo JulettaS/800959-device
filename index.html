@@ -2,12 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-      <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a class="logo">
-        <img src="img/logo.svg" width="164" height="36" alt="Device">
+        <img src="img/logo-black-1.svg" width="164" height="36" alt="Device">
       </a>
       <form class="form-search" action="https://htmlacademy.ru/echo" method="get" aria-label="Поиск по сайту">
         <input type="search" name="search" placeholder="Поиск по сайту">
@@ -28,7 +31,7 @@
         <ul class="site-navigation">
           <li>
             <a href="#">Каталог товаров</a>
-            <ul>
+            <ul class="submenu ">  <!-- -->
               <li>
                 <a href="#">Виртуальная реальность</a>
               </li>
@@ -69,7 +72,7 @@
         <h2 class="visibility-hidden">Популярные товары</h2>
         <ol>
           <li class="item">
-            <h3>Селфи-палка</h3>
+            <h3 class="visibility-hidden">Селфи-палка</h3>
             <img src="img/slider-1.png" width="560" height="520" alt="Селфи-палка">
             <span class="number">01</span>
             <span class="slogan"> Делай селфи как, <br> Бен Стиллер </span>
@@ -93,7 +96,7 @@
             <a class="btn-default" href="#"> Подробнее </a>
           </li>
           <li class="item">
-            <h3>Фитнес-браслет</h3>
+            <h3 class="visibility-hidden">Фитнес-браслет</h3>
             <img src="img/slider-2.png" width="560" height="520" alt="Фитнес-браслет">
             <span class="number">02</span>
             <span class="slogan"> Худеем правильно! </span>
@@ -112,7 +115,7 @@
             <a class="btn-default" href="#"> Подробнее </a>
           </li>
           <li class="item">
-            <h3>Квадрокоптер</h3>
+            <h3 class="visibility-hidden">Квадрокоптер</h3>
             <img src="img/slider-3.png" width="560" height="520" alt="Квадрокоптер">
             <span class="number">03</span>
             <span  class="slogan"> Порхает как бабочка,<br>жалит как пчела!</span>
@@ -165,7 +168,7 @@
         <!--Кнопки переключения пока просто разметила списком.   -->
         <ul class="navigation">
           <li>
-            <span class="btn-toggle">Доставка</span>
+            <span class="btn-toggle current">Доставка</span>
           </li>
           <li>
             <span class="btn-toggle">Гарантия</span>
@@ -175,20 +178,20 @@
           </li>
         </ul>
         <section class="content">
-          <h3>Доставка</h3>
+          <h3 class="section-title" >Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
              на ваш этаж.
           </p>
         </section>
         <section class="content">
-          <h3>Гарантия</h3>
+          <h3 class="section-title">Гарантия</h3>
           <p> Если из-за возгорания купленного у нас товара у вас сгорит дом —
               не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
           </p>
         </section>
         <section class="content">
-          <h3>Кредит</h3>
+          <h3 class="section-title">Кредит</h3>
           <p>Залезть в долговую яму стало проще!Кредитные консультанты подберут
              для вас наиболее выгодные условия кредита.
              Выгодные для нашего банка, разумеется.
@@ -197,10 +200,10 @@
       </section>
       <section class="brands">
         <h2 class="visibility-hidden"> Представленные бренды </h2>
-        <ul>
+        <ul class="brands-list">
           <li>
             <a href="https://www.dji.com">
-              <img src="img/brands-logo1-color.png" width="260" height="80" alt="dji">
+              <img  src="img/brands-logo1-color.png" width="260" height="80" alt="dji">
             </a>
           </li>
           <li>
@@ -221,13 +224,13 @@
         </ul>
       </section>
       <section class="about-us">
-        <h2>О нас</h2>
+        <h2 class="section-title">О нас</h2>
         <p> Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.</p>
         <p> Мы можем доставить ваш товар в самые отдаленные точки России!
             DEVICE работает со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="text-list">
           <li>
             <a href="https://www.dellin.ru/">Деловые Линии</a>
           </li>
@@ -241,7 +244,7 @@
         <a class="btn-default" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="section-title">Контакты</h2>
         <p> Вы можете забрать товар сами, заехав в наш офис.
             Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.
@@ -253,7 +256,7 @@
     <footer class="page-footer">
       <div class="column-left">
         <a class="logo">
-          <img src="img/logo.svg" width="164" height="36" alt="Device">
+          <img src="img/logo-y-1.svg" width="164" height="36" alt="Device">
         </a>
         <p class="contact"> г. Москва ул. Строителей,15 </p>
       </div>
@@ -307,20 +310,14 @@
     <div class="write-us-popup">
       <h2 class="visibility-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru" method="post" >
-        <label> Ваше имя
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          Ваш e-mail
-          <input type="email" name="email" placeholder="email@example.ru" required>
-        </label>
-        <label>
-          Текст письма
-          <textarea name="comment" rows="10" required>В свободной форме</textarea>
-        </label>
+        <label for="name-field"> Ваше имя:</label>
+        <input id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input id="email" type="email" name="email" placeholder="email@example.ru" required>
+        <label id="text">Текст письма:</label>
+        <textarea id="text-field" name="comment" rows="10" required>В свободной форме</textarea>
         <button class="btn-default" type="submit">Отправить</button>
         <button class="btn-close" type="button">Закрыть</button>
-        <!-- -->
       </form>
     </div>
   </body>

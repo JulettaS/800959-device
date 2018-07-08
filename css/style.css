@@ -1,0 +1,556 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+a {
+  font-weight: 800;
+  font-family: "Gilroy", "Arial", sans-serif;
+  vertical-align: middle;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.visibility-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.site-navigation,
+.site-navigation ul,
+.user-navigation,
+.product-categories ul,
+.slider ol,
+.brands ul,
+.social,
+.paginator,
+.breadcrumb,
+.filter ul,
+.sorting ul,
+.about-us ul,
+.navigation,
+.results-list {
+  list-style: none;
+}
+
+/*header*/
+
+.site-navigation a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.submenu a,
+.user-navigation a {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.submenu a:hover,
+.user-navigation a:hover,
+.site-navigation a:hover {
+  opacity: 0.6;
+}
+
+.submenu a:active,
+.user-navigation a:active,
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.form-search input[type="search"] {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255 ,03 );
+
+  background-color: #f7e296;
+  border: none;
+}
+.form-search input[type="search"]:hover {
+  olor: rgba(255, 255, 255 ,06 );
+}
+.form-search input[type="search"]:focus {
+  border: none;
+  border-bottom: 2px solid #000000;
+  opacity: 1;
+}
+
+.form-search button {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+
+  background: none;
+  border: 2px solid #000000;
+  opacity: 0;
+}
+.form-search input[type="search"]:focus + button {
+  opacity: 1;
+}
+
+.form-search input[type="search"]:focus + button:hover {
+  color: #ffffff;
+
+  background: #000000;
+  border: 2px solid #000000;
+}
+
+.form-search input[type="search"]:focus + button:active {
+  color: rgba(255, 255, 255 ,03 );
+
+  background: #000000;
+  border: 2px solid #000000;
+}
+
+.logo {
+  position: relative;
+}
+ .main-header .logo:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 164px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+
+  background: url("../img/logo-black-0.6.svg");
+}
+ .main-header .logo:active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 164px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+
+  background: url("../img/logo-black-0.3.svg");
+}
+/* решить проблему с изменеием SCG через CSS
+  - embed
+  - подключить еще 5 svg  сразными состояниями? куда оно уехало....
+*/
+
+/* footer */
+.page-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.page-footer a,
+.page-footer .user-navigation {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.contact {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 0.01em;
+}
+
+
+
+
+/* Слайдер*/
+.number {
+  font-weight: 800;
+  font-size: 179px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  color: #ffffff;
+
+  background-color: #444444 ;
+}
+
+.page-title,
+.section-title,
+.slogan {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+}
+
+/*Табличка */
+.caption {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #464646;
+}
+.data {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
+}
+
+
+/*Категории товаров */
+
+/*Сервис */
+
+/*Бренды */
+
+.brands li {
+  position: relative;
+
+  display: inline-block;
+}
+
+.brands li:nth-of-type(1) a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 260px;
+  height: 80px;
+
+  background: url("../img/brands-logo1-bw.jpg");
+}
+.brands li:nth-of-type(2) a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 260px;
+  height: 80px;
+
+  background: url("../img/brands-logo2-bw.jpg");
+}
+.brands li:nth-of-type(3) a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 260px;
+  height: 80px;
+
+  background: url("../img/brands-logo3-bw.jpg");
+}
+
+.brands li:nth-of-type(4) a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 260px;
+  height: 80px;
+
+  background: url("../img/brands-logo4-bw.jpg");
+}
+.brands li a:hover::after {
+  opacity: 0;
+}
+
+.text-list a {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.btn-default,
+.btn-toggle {
+  position: relative;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background: none;
+  border: none;
+}
+
+.btn-default::after,
+.btn-toggle::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+  height: 20%;
+
+  background-color: #f1c838;
+}
+.btn-default:hover::after,
+.btn-toggle:hover::after {
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.btn-default:active {
+  opacity: 0.3;
+}
+
+
+.btn-togge.current {
+  background-color: #000000;
+}
+
+
+/*формы*/
+.write-us-popup label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  color: #000000;
+}
+.write-us-popup input,
+.write-us-popup textarea {
+  padding: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us-popup input:hover,
+.write-us-popup textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-popup input:focus,
+.write-us-popup textarea:focus {
+  background-color: #ffffff;
+  border: 3px solid #faeec0;
+}
+
+.write-us-popup input:invalid,
+.write-us-popup textarea:invalid {
+  background-color: #f6dada;
+  border: none;
+}
+/*Каталог*/
+.breadcrumb .current,
+.breadcrumb a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: #000000;
+
+  opacity: 0.3;
+}
+.breadcrumb a:hover {
+  opacity: 0.6;
+}
+.breadcrumb a:active {
+  opacity: 0.1;
+}
+
+
+.filter h2,
+.sorting h2 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  text-align: left;
+  color: #000000;
+  text-transform: none;
+  letter-spacing: 0.2em;
+}
+ input[type="checkbox"] + label, input[type="radio"] + label {
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 40px;
+   font-family: "Open Sans", sans-serif;
+   text-align: left;
+   rgba(0, 0, 0, 1);
+ }
+
+ input[type="checkbox"]:disabled + label,
+ input[type="radio"]:disabled + label {
+   color: rgba(0, 0, 0, 0.3);
+ }
+
+
+
+
+
+
+.sorting-menu a {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: #000000;
+
+  opacity: 0.3;
+}
+.sorting-menu li a.current {
+  opacity: 1;
+}
+
+.sorting-menu a:hover {
+  opacity: 0.6;
+}
+.sorting-menu a:active {
+  opacity: 1;
+}
+
+
+.btn-compare {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn-compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.btn-compare:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.cost {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Gilroy", "Arial" , sans-serif;
+  text-align: right;
+  color: #464646;
+}
+
+
+
+.paginator {
+  display: block;
+
+  background-color: #ebebeb;
+}
+.paginator a {
+  display: block;
+  padding: 20px;
+
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.paginator a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.paginator a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator .current,
+.paginator .prev,
+.paginator .next {
+  color: rgba(0, 0, 0, 1);
+}
+
+.paginator .prev:hover,
+.paginator .next:hover {
+  background-color: #d9d9d9;
+}
+.paginator .prev:active,
+.paginator .next:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d9d9d9;
+
+}

@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a class="logo" href="index.html">
-        <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина Device">
+        <img src="img/logo-black-1.svg" width="164" height="36" alt="Логотип магазина Device">
       </a>
       <form class="form-search" action="https://htmlacademy.ru/echo" method="get" aria-label="Поиск по сайту">
         <input type="search" name="search" placeholder="Поиск по сайту">
@@ -31,7 +34,7 @@
           <ul class="site-navigation">
           <li>
             <a href="#">Каталог товаров</a>
-            <ul>
+            <ul class="submenu">
               <li>
                 <a href="#">Виртуальная реальность</a>
               </li>
@@ -88,34 +91,24 @@
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-checkbox" type="checkbox" name="color-black" value="on">
-                  Черный
-                </label>
+                <input class="visually-hidden fiter-input filter-input-checkbox" id="color-black" type="checkbox" name="color-black" value="on">
+                <label for="color-black">Черный</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-checkbox" type="checkbox" name="color-white" value="on">
-                  Белый
-                </label>
+                <input class="visually-hidden fiter-input filter-input-checkbox"  id="color-white" type="checkbox" name="color-white" value="color-white">
+                <label for="color-white">Белый</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-checkbox" type="checkbox" name="color-blue" value="on">
-                  Синий
-                </label>
+                <input class="visually-hidden fiter-input filter-input-checkbox" id="color-blue" type="checkbox" name="color-blue" value="color-blue">
+                <label  for="color-blue">Синий</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-checkbox" type="checkbox" name="color-red" value="on">
-                  Красный
-                </label>
+                <input class="visually-hidden fiter-input filter-input-checkbox" id="color-red" type="checkbox" name="color-red" value="color-red" disabled>
+                <label for="color-red">Красный</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-checkbox" type="checkbox" name="color-pink" value="on">
-                  Розовый
-                </label>
+                <input class="visually-hidden fiter-input filter-input-checkbox" id="color-pink" type="checkbox" name="color-pink" value="color-pink">
+                <label for="color-pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
@@ -123,16 +116,12 @@
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-radio" type="radio" name="bluetooth" value="yes">
-                  Есть
-                </label>
+                <input class="visually-hidden fiter-input filter-input-radio" id="bluetooth-yes" type="radio" name="bluetooth" value="yes">
+                <label for="bluetooth-yes">Есть</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden fiter-input filter-input-radio" type="radio" name="bluetooth" value="no">
-                  Нет
-                </label>
+                <input class="visually-hidden fiter-input filter-input-radio" id="bluetooth-no" type="radio" name="bluetooth" value="no">
+                <label for="bluetooth-no">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -143,7 +132,7 @@
         <h2>Сотрировка:</h2>
         <ul class="sorting-menu">
           <li>
-            <a href="#">По цене</a>
+            <a class="current"  href="#">По цене</a>
           </li>
           <li>
             <a href="#">По типу</a>
@@ -153,10 +142,10 @@
           </li>
         </ul>
         <div class="sorting-directory" aria-label="Направление сортировки">
-          <a href="#">
+          <a class="sorting-down" href="#">
             <img src="img/icon-down-dir.svg" width="10" height="11" alt="Сортировать по возрастанию">
           </a>
-          <a href="#">
+          <a class="sorting-up" href="#">
             <img src="img/icon-up-dir.svg" width="10" height="11" alt="Сортировать по убванию">
           </a>
         </div>
@@ -192,7 +181,7 @@
             </div>
           </li>
           <!-- NEW добавлю псевдоэлементом для обекта с классом "new" -->
-          <li class="results-item new">
+          <li class="results-item  new">
             <img src="img/results-item-4.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
             <a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a>
             <p class="cost">4 500 руб</p>
@@ -224,7 +213,7 @@
     <footer class="page-footer">
       <div class="column-left">
         <a  class="logo" href="index.html" >
-          <img src="img/logo.svg" width="164" height="36" alt="Device">
+          <img src="img/logo-y-1.svg" width="164" height="36" alt="Device">
         </a>
         <p class="contact">г. Москва ул. Строителей,15</p>
       </div>

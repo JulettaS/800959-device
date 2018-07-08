@@ -1,20 +1,3 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @JulettaS Sign out
-17
-166 161 htmlacademy/codeguide
- Code  Issues 2  Pull requests 0  Projects 0  Insights
-codeguide/csscomb.json
-b442b77  on 2 Oct 2015
-@meritt meritt ➡️ Перенёс конфиг CSSComb в корень
-
-381 lines (379 sloc)  9.49 KB
 {
   "exclude": [
     ".git/**",
@@ -395,16 +378,3 @@ b442b77  on 2 Oct 2015
     ]
   ]
 }
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
