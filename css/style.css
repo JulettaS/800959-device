@@ -1,10 +1,26 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroyextrabold.woff2") format("woff2"),
+        url("webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("gilroyextrabold.woff2") format("woff2"),
+        url("webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
 html {
   margin: 0;
   padding: 0;
 
   font-size: 15px;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -30,7 +46,6 @@ a {
   color: #000000;
   text-decoration: none;
 }
-
 .visibility-hidden {
   position: absolute;
 
@@ -40,7 +55,6 @@ a {
 
   clip: rect(0 0 0 0);
 }
-
 .site-navigation,
 .site-navigation ul,
 .user-navigation,
@@ -57,9 +71,7 @@ a {
 .results-list {
   list-style: none;
 }
-
 /*header*/
-
 .site-navigation a {
   font-weight: 800;
   font-size: 18px;
@@ -69,7 +81,6 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .submenu a,
 .user-navigation a {
   font-weight: 300;
@@ -79,13 +90,11 @@ a {
   text-transform: none;
   letter-spacing: normal;
 }
-
 .submenu a:hover,
 .user-navigation a:hover,
 .site-navigation a:hover {
   opacity: 0.6;
 }
-
 .submenu a:active,
 .user-navigation a:active,
 .site-navigation a:active {
@@ -110,7 +119,6 @@ a {
   border-bottom: 2px solid #000000;
   opacity: 1;
 }
-
 .form-search button {
   font-weight: 300;
   font-size: 15px;
@@ -125,27 +133,21 @@ a {
 .form-search input[type="search"]:focus + button {
   opacity: 1;
 }
-
 .form-search input[type="search"]:focus + button:hover {
   color: #ffffff;
 
   background: #000000;
   border: 2px solid #000000;
 }
-
 .form-search input[type="search"]:focus + button:active {
   color: rgba(255, 255, 255 ,03 );
 
   background: #000000;
   border: 2px solid #000000;
 }
-
-
 .main-header{
   position: relative;
 }
-
-
  .main-header .logo:hover::after {
   content: "";
   position: absolute;
@@ -176,23 +178,20 @@ a {
 }
 /* решить проблему с изменеием SCG через CSS
   - embed
-  - подключить еще 5 svg  сразными состояниями? куда оно уехало....
+  - подключить еще 5 svg  сразными состояниями?
 */
-
 /* footer */
 .page-footer {
   color: #ffffff;
 
   background-color: #464646;
 }
-
 .page-footer a,
 .page-footer .user-navigation {
   color: #ffffff;
 
   background-color: #464646;
 }
-
 .contact {
   font-weight: 300;
   font-size: 15px;
@@ -203,10 +202,6 @@ a {
   font-style: normal;
   letter-spacing: 0.01em;
 }
-
-
-
-
 /* Слайдер*/
 .number {
   font-weight: 800;
@@ -352,17 +347,12 @@ a {
   width: 100%;
   height: 100%;
 }
-
 .btn-default:active {
   opacity: 0.3;
 }
-
-
 .btn-togge.current {
   background-color: #000000;
 }
-
-
 /*формы*/
 .write-us-popup label {
   font-weight: 800;
@@ -422,8 +412,6 @@ a {
 .breadcrumb a:active {
   opacity: 0.1;
 }
-
-
 .filter h2,
 .sorting h2 {
   font-weight: 800;
@@ -435,8 +423,6 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
-
 .filter fieldset {
   border: none;
 }
@@ -463,12 +449,6 @@ a {
  input[type="radio"]:disabled + label {
    color: rgba(0, 0, 0, 0.3);
  }
-
-
-
-
-
-
 .sorting-menu a {
   font-weight: 300;
   font-size: 14px;
@@ -482,15 +462,12 @@ a {
 .sorting-menu li a.current {
   opacity: 1;
 }
-
 .sorting-menu a:hover {
   opacity: 0.6;
 }
 .sorting-menu a:active {
   opacity: 1;
 }
-
-
 .btn-compare {
   font-weight: 300;
   font-size: 13px;
@@ -502,11 +479,9 @@ a {
 .btn-compare:hover {
   color: rgba(0, 0, 0, 1);
 }
-
 .btn-compare:active {
   color: rgba(0, 0, 0, 0.1);
 }
-
 .cost {
   font-weight: 300;
   font-size: 14px;
@@ -515,9 +490,6 @@ a {
   text-align: right;
   color: #464646;
 }
-
-
-
 .paginator {
   display: block;
 
@@ -531,21 +503,17 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-
 .paginator a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
-
 .paginator a:active {
   color: rgba(0, 0, 0, 1);
 }
-
 .paginator .current,
 .paginator .prev,
 .paginator .next {
   color: rgba(0, 0, 0, 1);
 }
-
 .paginator .prev:hover,
 .paginator .next:hover {
   background-color: #d9d9d9;
